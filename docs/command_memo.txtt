@@ -1,3 +1,8 @@
-php artisan make:migration create_{テーブル名}_table
+// php artisan make:migration create_{テーブル名}_table
+php artisan make:model {Model} --migration
 php artisan migrate
 php artisan migrate:reset
+php artisan make:factory DiaryFactory --model=Diary
+php artisan tinker
+use App\Models\Diary;
+Diary::first()->user
