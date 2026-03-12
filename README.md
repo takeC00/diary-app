@@ -7,16 +7,31 @@ Laravel を用いたシンプルな日記アプリです。
 
 ## 概要
 
-このアプリは **Laravel の基本理解**を目的として作成しています。
 
-主に以下の理解を目的としています。
+## 開発方針
 
-- Laravel MVC構造
-- Eloquent ORM
-- 認証（Authentication）
-- 認可（Authorization）
-- データベース設計
-- コード品質改善
+本アプリは **理解重視の段階的開発**で実装しています。
+
+### Phase 1
+まず MVC 構成のみで基本機能を実装
+
+- Route
+- Controller
+- Model
+- Blade
+
+### Phase 2
+責務分離のためのリファクタリング
+
+- FormRequest によるバリデーション分離
+- Policy による認可処理
+- 必要に応じて Service 層導入
+
+### Phase 3
+コード品質改善
+
+- Laravel Pint / PHP CS Fixer
+- PHPStan / Larastan
 
 ---
 
@@ -46,17 +61,6 @@ Laravel を用いたシンプルな日記アプリです。
 - MariaDB
 - Nginx
 - AWS（EC2 / RDS）※予定
-
----
-
-## 実装機能（予定）
-
-シンプルな CRUD 機能を中心に実装予定です。
-
-- 日記一覧表示
-- 日記投稿
-- 日記編集
-- 日記削除
 
 ---
 
