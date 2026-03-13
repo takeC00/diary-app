@@ -6,3 +6,5 @@ php artisan make:factory DiaryFactory --model=Diary
 php artisan tinker
 use App\Models\Diary;
 Diary::first()->user
+php artisan make:seeder ファイル名
+php artisan migrate:fresh --seed
