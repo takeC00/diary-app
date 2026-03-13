@@ -27,8 +27,25 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
-            'icon' => fake()->name(),
-            'introduction' => fake()->name(),
+            'icon' => fake()->randomElement([
+                'default.png',
+                'user1.png',
+                'user2.png',
+                'user3.png',
+                'user4.png',
+            ]),
+            'introduction' => fake()->randomElement([
+                'プログラミングを勉強中です。',
+                '日々の出来事を記録するために日記を書いています。',
+                'Laravelを学習しながらアプリを作っています。',
+                '散歩や読書が好きです。',
+                'コーヒーを飲みながらコードを書く時間が好きです。',
+                '新しいことを学ぶのが好きです。',
+                '日々の小さな出来事を大切にしています。',
+                'のんびりマイペースに過ごしています。',
+                'エンジニアを目指して勉強しています。',
+                'よろしくお願いします。',
+            ]),
         ];
     }
 
