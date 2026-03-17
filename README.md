@@ -1,6 +1,6 @@
 # Diary App
 
-![Image](https://github.com/user-attachments/assets/955c0eec-83b1-470a-b902-a7283d0ab68e)
+<img width="300" height="600" alt="Image" src="https://github.com/user-attachments/assets/ea27fa9f-c85a-4868-b09c-2651b410271d" />
 
 Laravel を用いたシンプルな日記アプリです。  
 ログインユーザーが日記を投稿・編集・削除でき、公開設定された日記は他ユーザーも閲覧できます。
@@ -74,6 +74,5 @@ Laravel を用いたシンプルな日記アプリです。
 
 ## 画面遷移図
 
-<img width="400" height="200" alt="画面遷移図" src="https://github.com/user-attachments/assets/93f114e9-a535-41bf-bb1d-d2b4b1a3289b" />
-
+<img width="200" height="400" alt="Image" src="https://github.com/user-attachments/assets/2eeebd49-4588-41d2-aa0f-6fe3225441bd" />
 ---
