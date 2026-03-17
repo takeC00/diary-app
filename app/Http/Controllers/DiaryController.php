@@ -12,7 +12,7 @@ class DiaryController extends Controller
      */
     public function index()
     {
-        $diaries = Diary::where("is_public", true)->get();
+        $diaries = Diary::paginate(12);
         return view('diaries.index', compact('diaries'));
     }
 
