@@ -1,7 +1,10 @@
 # Diary App
+
+![Image](https://github.com/user-attachments/assets/955c0eec-83b1-470a-b902-a7283d0ab68e)
+
 Laravel を用いたシンプルな日記アプリです。  
 ログインユーザーが日記を投稿・編集・削除でき、公開設定された日記は他ユーザーも閲覧できます。
-![Image](https://github.com/user-attachments/assets/955c0eec-83b1-470a-b902-a7283d0ab68e)
+
 ---
 
 ## 概要
