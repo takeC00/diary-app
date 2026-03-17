@@ -11,3 +11,6 @@ use App\Models\Diary;
 Diary::first()->user
 php artisan make:seeder ファイル名
 php artisan migrate:fresh --seed
+
+git config --global http.postBuffer 524288000 // 画像など増やした場合バッファ増やしておかないとPUSHできない
+php artisan storage:link //public直置き禁止

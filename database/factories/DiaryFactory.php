@@ -51,6 +51,8 @@ class DiaryFactory extends Factory
             ]),
 
             'is_public' => fake()->boolean(),
+
+            'image' => 'images/' . rand(1,50) . '.jpg'
         ];
     }
 }

@@ -16,6 +16,7 @@ class Diary extends Model
         'diary_date',
         'is_public',
         'body',
+        'image',
     ];
 
     public function user(): BelongsTo

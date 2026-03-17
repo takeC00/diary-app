@@ -16,7 +16,7 @@
                     gap-4 md:gap-8">
 
             <!-- ロゴ -->
-            <a href="#" class="flex items-center gap-2">
+            <a href="/diaries" class="flex items-center gap-2">
                 <img src="/images/logo.png" class="h-20">
                 <span class="font-bold text-lg">Photo Diary</span>
             </a>
@@ -59,8 +59,7 @@
     </header>
     <main class="bg-orange-100">
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
-            @foreach ($diaries as $i => $diary)
-                <a href="/diaries/show/{{ $diary->id }}" class="block group">
+                <a href="/diaries/show/" class="block group">
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-xl
                         shadow-xl overflow-hidden
@@ -73,7 +72,7 @@
                             <img class="block w-full h-48 object-cover rounded-lg
                                 transition-transform duration-300
                                 group-hover:scale-105"
-                                src="{{ asset('storage/' . $diary->image) }}">
+                                src="{{ asset('images/' . $diary->image) }}">
 
                             <h2 class="text-lg font-bold text-center line-clamp-2 min-h-[3.5rem]">
                                 {{ $diary->title }}
@@ -88,10 +87,6 @@
                         </div>
                     </div>
                 </a>
-            @endforeach
-        </section>
-        <section class="pb-10 mt-10 flex justify-center">
-            {{ $diaries->links('pagination::tailwind') }}
         </section>
     </main>
     <footer class="bg-gray-900 text-white">
@@ -103,7 +98,7 @@
 
             <!-- ロゴ -->
             <div class="flex items-center">
-                <a href="diaries" class="flex items-center gap-2">
+                <a href="/diaries" class="flex items-center gap-2">
                     <img class="h-32 w-auto" src="/images/logo.png" alt="Photo Diary">
                 </a>
             </div>
@@ -112,7 +107,7 @@
             <nav>
                 <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm">
                     <li>
-                        <a href="#"
+                        <a href="diaries"
                             class="px-4 py-2 rounded-lg border border-white/30 text-white/80
                                 hover:text-white hover:border-white hover:bg-white/10
                                 transition duration-300">
@@ -120,7 +115,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="diaries"
+                        <a href="#"
                             class="px-4 py-2 rounded-lg border border-white/30 text-white/80
                                 hover:text-white hover:border-white hover:bg-white/10
                                 transition duration-300">

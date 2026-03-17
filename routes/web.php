@@ -20,5 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('diaries', [DiaryController::class, "index"])->name('diaries.index');
+Route::get('diaries/show/{id}', [DiaryController::class, "show"])->name('diaries.show');
 
 require __DIR__.'/auth.php';

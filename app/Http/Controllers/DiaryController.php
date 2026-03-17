@@ -12,7 +12,7 @@ class DiaryController extends Controller
      */
     public function index()
     {
-        $diaries = Diary::paginate(12);
+        $diaries = Diary::with('user')->where('is_public',true)->paginate(12);
         return view('diaries.index', compact('diaries'));
     }
 
@@ -37,7 +37,8 @@ class DiaryController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $diary = Diary::with('user')->where('id', $id)->first();
+        return view('diaries.show', compact('diary'));
     }
 
     /**
