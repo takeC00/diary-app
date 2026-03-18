@@ -72,7 +72,7 @@
                             <img class="block w-full h-48 object-cover rounded-lg
                                 transition-transform duration-300
                                 group-hover:scale-105"
-                                src="{{ asset('images/' . $diary->image) }}">
+                                src="{{ asset('storage/' . $diary->image) }}">
 
                             <h2 class="text-lg font-bold text-center line-clamp-2 min-h-[3.5rem]">
                                 {{ $diary->title }}
