@@ -1,5 +1,7 @@
 php artisan config:clear
 php artisan cache:clear
+php artisan route:clear
+
 
 // php artisan make:migration create_{テーブル名}_table
 php artisan make:model {Model} --migration

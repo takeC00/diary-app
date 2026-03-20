@@ -15,31 +15,43 @@
         <nav>
             <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm">
 
-                <li>
+                <li class="flex">
                     <a href="#"
-                        class="px-4 py-2 rounded-lg border border-white/30 text-white/80
-                            hover:text-white hover:border-white hover:bg-white/10
-                            transition duration-300">
+                        class="inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-white/80
+                               hover:text-white hover:border-white hover:bg-white/10
+                               transition duration-300">
                         公開日記
                     </a>
                 </li>
 
-                <li>
+                <li class="flex">
                     <a href="#"
-                        class="px-4 py-2 rounded-lg border border-white/30 text-white/80
-                            hover:text-white hover:border-white hover:bg-white/10
-                            transition duration-300">
+                        class="inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-white/80
+                               hover:text-white hover:border-white hover:bg-white/10
+                               transition duration-300">
                         自分の日記
                     </a>
                 </li>
 
-                <li>
+                <li class="flex">
                     <a href="#"
-                        class="px-4 py-2 rounded-lg border border-white/30 text-white/80
-                            hover:text-white hover:border-white hover:bg-white/10
-                            transition duration-300">
+                        class="inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-white/80
+                               hover:text-white hover:border-white hover:bg-white/10
+                               transition duration-300">
                         マイページ
                     </a>
+                </li>
+
+                <li class="flex">
+                    <form method="POST" action="{{ route('logout') }}" class="flex m-0">
+                        @csrf
+                        <button type="submit"
+                            class="inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-white/80
+                                   hover:text-white hover:border-white hover:bg-white/10
+                                   transition duration-300 bg-transparent appearance-none leading-normal">
+                            ログアウト
+                        </button>
+                    </form>
                 </li>
 
             </ul>

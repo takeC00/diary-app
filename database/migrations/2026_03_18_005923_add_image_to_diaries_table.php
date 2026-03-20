@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('diaries', function (Blueprint $table) {
-            $table->string('image')->nullable()->before('created_at');
+            $table->string('image')->nullable()->after('body');
         });
     }
 
