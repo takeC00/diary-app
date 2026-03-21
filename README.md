@@ -2,8 +2,11 @@
 
 <img width="300" height="600" alt="Image" src="https://github.com/user-attachments/assets/ea27fa9f-c85a-4868-b09c-2651b410271d" />
 
-Laravel を用いたシンプルな日記アプリです。  
+Laravel を用いたシンプルな日記アプリです。
 ログインユーザーが日記を投稿・編集・削除でき、公開設定された日記は他ユーザーも閲覧できます。
+
+※PHPのみで実装した物をdiary-app-phpリポジトリで作成
+https://github.com/takeC00/diary-app-php
 
 ---
 
